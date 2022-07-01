@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./useState Hook/App";
+import App from "./App";
 
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
