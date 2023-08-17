@@ -2,14 +2,15 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
-import HomeScreen from "./src/screen/HomeScreen";
-import Components from "./src/screen/Components";
-import ListScreen from "./src/screen/ListScreen";
-import ImageScreen from "./src/screen/ImageScreen";
-import CounterScreen from "./src/screen/CounterScreen";
-import ColorScreen from "./src/screen/ColorScreen";
-import SquareScreen from "./src/screen/SquareScreen";
-import TextScreen from "./src/screen/TextScreen";
+import HomeScreen from "./src/screens/HomeScreen";
+import Components from "./src/screens/Components";
+import ListScreen from "./src/screens/ListScreen";
+import ImageScreen from "./src/screens/ImageScreen";
+import CounterScreen from "./src/screens/CounterScreen";
+import ColorScreen from "./src/screens/ColorScreen";
+import SquareScreen from "./src/screens/SquareScreen";
+import TextScreen from "./src/screens/TextScreen";
+import BoxScreen from "./src/screens/BoxScreen";
 
 const navigator = createStackNavigator(
   {
@@ -21,6 +22,7 @@ const navigator = createStackNavigator(
     Color: ColorScreen,
     Square: SquareScreen,
     Text: TextScreen,
+    Box: BoxScreen,
   },
   {
     initialRouteName: "Home",
